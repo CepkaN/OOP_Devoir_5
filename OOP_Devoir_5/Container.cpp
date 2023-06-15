@@ -1,4 +1,4 @@
-#include"Container.h"
+ï»¿#include"Container.h"
 #include<iostream>
 
 Container::Container():_tete(nullptr),_queue(nullptr),_taille(0) {}
@@ -28,7 +28,7 @@ void Container::AjouQue(int num) {
 }
 void Container::MontreContainerTete() {
 	if (_taille == 0) {
-		std::cout << "Íåò ýëåìåíòîâ.\n";
+		std::cout << "ÐÐµÑ‚ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð².\n";
 		return;
 	}
 	for (Node* node = _tete; node != _queue->prec; node = node->prec)
@@ -36,7 +36,7 @@ void Container::MontreContainerTete() {
 }
 void Container::MontreContainerQue() {
 	if (_taille == 0) {
-		std::cout << "Íåò ýëåìåíòîâ.\n";
+		std::cout << "ÐÐµÑ‚ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð².\n";
 		return;
 	}
 	for (Node* node = _queue; node != _tete->suiv; node = node->suiv)

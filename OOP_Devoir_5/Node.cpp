@@ -1,10 +1,10 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include"Node.h"
 
 Node::Node(long long int numero):_numero(numero),suiv(nullptr),prec(nullptr) {}
 
 Node::~Node() {
-	std::cout << "Ýëåìåíò óäàë¸í.\n";
+	std::cout << "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚ ÑƒÐ´Ð°Ð»Ñ‘Ð½.\n";
 }
 long long int Node::GetNumero() {
 	return _numero;

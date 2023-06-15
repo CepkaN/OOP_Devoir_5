@@ -1,22 +1,22 @@
-
+ï»¿
 #include <iostream>
 #include"Container.h"
 
 void fun(Container &cont1) {
     system("cls");
     int n, m, k;  long long int el;
-    std::cout << "\tÂûáåðèòå ïóíêò : \n";
-    std::cout << "1. Äîáàâèòü ýëåìåíò.\n";
-    std::cout << "2. Ïîêàçàòü âñå.\n";
-    std::cout << "3. Óäàëèòü ýëåìåíò.\n";
-    std::cout << "4. Óäàëèòü âñ¸.\n";
+    std::cout << "\tÐ’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð¿ÑƒÐ½ÐºÑ‚ : \n";
+    std::cout << "1. Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚.\n";
+    std::cout << "2. ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð²ÑÐµ.\n";
+    std::cout << "3. Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚.\n";
+    std::cout << "4. Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð²ÑÑ‘.\n";
     std::cin >> n;
     switch (n) {
-    case 1:system("cls"); std::cout << "Ââåäèòå êîëè÷åñòâî äîáàâëÿåìûõ ýëåìåíòîâ : ";
-        std::cin >> m; for (; m != 0; m--) { std::cout << "Ââåäèòå ýëåìåíò : \n"; std::cin >> el; cont1.AjouTete(el);}fun(cont1); break;
+    case 1:system("cls"); std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð´Ð¾Ð±Ð°Ð²Ð»ÑÐµÐ¼Ñ‹Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² : ";
+        std::cin >> m; for (; m != 0; m--) { std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ : \n"; std::cin >> el; cont1.AjouTete(el);}fun(cont1); break;
     case 2:system("cls"); cont1.MontreContainerTete(); system("pause");fun(cont1); break;
-    case 3:system("cls"); std::cout << "Ââåäèòå èíäåêñ ýëåìåíòà : "; std::cin >> k; cont1.RetireElement(k);fun(cont1); break;
-    case 4:system("cls"); cont1.RetireTous(); std::cout << "Âñå ýëåìåíòû óäàëåíû."; system("pause"); fun(cont1); break;
+    case 3:system("cls"); std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð½Ð´ÐµÐºÑ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° : "; std::cin >> k; cont1.RetireElement(k);fun(cont1); break;
+    case 4:system("cls"); cont1.RetireTous(); std::cout << "Ð’ÑÐµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ ÑƒÐ´Ð°Ð»ÐµÐ½Ñ‹."; system("pause"); fun(cont1); break;
     default:return;
     }
 }
